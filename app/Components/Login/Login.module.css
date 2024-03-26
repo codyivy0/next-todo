@@ -1,0 +1,30 @@
+.container {
+  background-color: var(--bg-dark);
+  color: var(--text-secondary);
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 0.5rem;
+  margin-top: 3rem;
+}
+.box {
+  padding: 1rem;
+  width: 90%;
+  font-size: 18px;
+}
+.bold {
+  font-weight: 800;
+  font-size: 2rem;
+}
+.BTNsubmit {
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 2px solid var(--text-primary);
+}
+.BtnLoginRegister {
+  padding: 1rem;
+}
+.BtnLoginRegister:hover {
+  transform: scale(0.98);
+}
