@@ -1,0 +1,48 @@
+.dashboardContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-inline: 1rem;
+  gap: 0.5rem;
+}
+
+.box {
+  padding: 1rem;
+  width: 90%;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.BTNaddTodo {
+  background-color: transparent;
+  color: var(--text-primary);
+  cursor: pointer;
+  margin: 0;
+  border: 2px solid var(--text-primary);
+}
+.BTNaddTodo:hover {
+  filter: brightness(0.7);
+  transform: scale(0.99);
+}
+.BTNaddSmall {
+  display: flex;
+  padding: 1rem;
+  border: 1px solid var(--text-primary);
+  font-weight: bold;
+}
+.BTNaddSmall:hover {
+  background-color: orange;
+  color: black;
+  cursor: pointer;
+  transform: scale(0.96);
+}
+.inputContainer {
+  display: flex;
+  justify-items: stretch;
+  width: 100%;
+}
+.inputTodo {
+  outline: none;
+  padding: 1rem;
+  width: 100%;
+}

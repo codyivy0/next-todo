@@ -1,0 +1,34 @@
+.modalContainer {
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+  position: fixed;
+  inset: -0;
+  z-index: 1;
+  margin: 0;
+}
+
+.headerBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--text-secondary);
+  padding-block: 1rem;
+  padding-inline: 1rem;
+  font-size: 1.5rem;
+}
+.headerBar h1 {
+  margin: 0;
+}
+.cursor {
+  cursor: pointer;
+}
+
+.content {
+  padding-inline: 1rem;
+}
+.content h3 {
+  transition: .8s ease;
+}
+.content h3:hover {
+  transform: scale(.98);
+}

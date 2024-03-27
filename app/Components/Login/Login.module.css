@@ -21,6 +21,7 @@
   background-color: transparent;
   color: var(--text-primary);
   border: 2px solid var(--text-primary);
+  cursor: pointer;
 }
 .BtnLoginRegister {
   padding: 1rem;

@@ -1,0 +1,14 @@
+.todoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flexrow{
+    display: flex;
+    align-items: center;
+}
+.toolIcon:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
