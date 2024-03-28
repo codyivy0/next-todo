@@ -63,7 +63,6 @@ const UserDashboard = () => {
 
   return (
     <div className={styles.dashboardContainer}>
-      <p>logged in as {currentUser.email} </p>
       {userInfo && !loading && todos && (
         <>
           {Object.keys(todos).map((todo, index) => {

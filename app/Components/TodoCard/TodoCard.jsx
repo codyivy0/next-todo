@@ -2,14 +2,15 @@ import Image from "next/image";
 import styles from "./TodoCard.module.css";
 
 const TodoCard = (props) => {
-const {children,todoKey, handleDelete} = props
+  const { children, todoKey, handleDelete } = props;
 
   return (
     <div className={styles.todoContainer}>
       <section className={styles.flexrow}>
-        <Image src="/dot.svg" alt="dot" height={30} width={30} /> {children}
+        <Image src="/dot.svg" alt="dot" height={30} width={30} />
+        <div className={styles.wordWrap}>{children}</div>
       </section>
-      <section className={styles.flexrow}>
+      <section className={`${styles.flexrow} ${styles.toolbar}`}>
         {/* <Image
           className={styles.toolIcon}
           src="/pencil.svg"
@@ -18,7 +19,7 @@ const {children,todoKey, handleDelete} = props
           width={30}
         /> */}
         <Image
-        onClick={handleDelete(todoKey)}
+          onClick={handleDelete(todoKey)}
           className={styles.toolIcon}
           src="/trash.svg"
           alt="trash"

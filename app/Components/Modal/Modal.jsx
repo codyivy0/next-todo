@@ -5,7 +5,7 @@ import { useAuth } from "@/app/context/authcontext";
 
 const Modal = (props) => {
   const { setOpenModal } = props;
-  const { logout } = useAuth();
+  const { logout, currentUser } = useAuth();
 
   return (
     <section className={styles.modalContainer}>
@@ -21,6 +21,7 @@ const Modal = (props) => {
         />
       </div>
       <div className={styles.content}>
+        <em>currently logged in as <strong>{currentUser.email}</strong></em>
         <h3
           className={styles.cursor}
           onClick={() => {
