@@ -53,12 +53,12 @@ const Login = () => {
         >
           SUBMIT
         </button>
-        <h3
+        {/* <h3
           className={styles.BTNLoginRegister}
           onClick={() => setIsLoggingIn(!isLoggingIn)}
         >
           {!isLoggingIn ? "Login" : "Register"}
-        </h3>
+        </h3> */}
       </section>
     </div>
   );
